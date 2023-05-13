@@ -1,0 +1,135 @@
+
+    body {
+    font-family: "ysabeau", sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    background-color: #f5f5f5;
+    color: #333333;
+    margin: 0;
+    padding: 0;
+    }
+
+    header {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    background-color: #84a98c;
+    padding: 20px;
+    border-radius: 0 0 0 0;
+    z-index: 100;
+    }
+
+    footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    background-color: #84a98c;
+    padding: 20px;
+    border-radius: 10% 10% 0 0;
+    z-index: 100;
+    }
+
+    main {
+    margin-top: 100px;
+    margin-bottom: 200px;
+    }
+
+    img {
+        width: 10%;
+        height: auto;
+    }
+
+    nav {
+        background-color: #8f6b2c;
+        text-align: center;
+        box-shadow: 0 0 30px #333;
+        display: flex;
+        flex-direction: row; 
+      }
+      
+      nav div {
+        flex: 1 1 auto;
+      }
+      
+      nav a {
+        display: block;
+        color: #fff;
+        text-align: center;
+        padding: 15px;
+        text-decoration: none;
+        font-size: 0.9rem;
+      }
+      
+      nav a:hover {
+        border: 1px solid black;
+        color: black;
+      }
+
+    .page-title {
+    font-size: 36px;
+    line-height: 1.2;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #8f6b2c;
+    }
+
+    .section-title {
+    font-size: 24px;
+    line-height: 1.2;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #8f6b2c;
+    }
+
+    .section-description {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    }
+
+    .subheading {
+    font-size: 20px;
+    line-height: 1.2;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #8f6b2c;
+    }
+
+    .list {
+    margin-bottom: 20px;
+    list-style-position: inside;
+    color: #333333;
+    }
+
+    .list li {
+    margin-bottom: 10px;
+    }
+
+    .list ol li:before {
+    content: counter(item) ". ";
+    counter-increment: item;
+    color: #8f6b2c;
+    }
+
+    /* media queries for adjusting margins */
+    @media screen and (max-width: 767px) {
+    main {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    nav {
+        display: block;
+    }
+    
+    }
