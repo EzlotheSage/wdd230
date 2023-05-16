@@ -1,23 +1,14 @@
-// Get the current date and display it in the header
-let dateElement = document.querySelector('.date');
-let date = new Date();
-let options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
-dateElement.textContent = date.toLocaleDateString('en-US', options);
+// Get the current day of the week (0: Sunday, 1: Monday, ..., 6: Saturday)
+const currentDay = new Date().getDay();
 
-// Toggle the menu when the hamburger button is clicked
-let hamburgerButton = document.querySelector('.hamburger');
-let menu = document.querySelector('.menu');
-hamburgerButton.addEventListener('click', function() {
-  menu.classList.toggle('show');
-});
+// Get the banner element
+const banner = document.getElementById('banner');
 
-// Get the current year and display it in the footer
-let yearElement = document.querySelector('.year');
-let currentYear = new Date().getFullYear();
-yearElement.textContent = currentYear;
-
-// Get the last modified date of the page and display it in the footer
-let lastModifiedElement = document.querySelector('.last-modified');
-let lastModified = document.lastModified;
-lastModifiedElement.textContent = lastModified;
-
+// Check if it's Monday (1) or Tuesday (2)
+if (currentDay === 1 || currentDay === 2) {
+  // Set the banner text
+  banner.textContent = '🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.';
+} else {
+  // If it's not Monday or Tuesday, hide the banner
+  banner.style.display = 'none';
+}

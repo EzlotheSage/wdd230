@@ -3,66 +3,92 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Page Title</title>
+  <title>Oak Harbor Chamber Homepage</title>
+  <link rel="shortcut icon" href="../favicon.ico">
   <link rel="stylesheet" href="./styles/styles.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Ysabeau:wght@200&display=swap" rel="stylesheet">
-  <script src="./scripts/script.js"></script>
-  <script src="./scripts/date.js"></script>
+  
+  
 
 </head>
 <body>
   <header>
-    
-    <div class="logo"><img class='img' src="./images/logo.png"></div>
-    <h1 class="site-name">Oak Harbor Chamber of Commerce</h1>
+    <div class="header-content">
+      <div class="logo"><img class='img' src="./images/logo.png"></div>
+      <h1 class="site-name">Oak Harbor Chamber of Commerce</h1>
+      <div id="banner" class="banner"></div>
+      <nav>
+        <ul class="menu">
+          <li><a href="#">Join</a></li>
+          <li><a href="#">Discover</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Find us on Facebook!</a></li>
+          <li><a href="#">Check us out on Instagram!</a></li>
+        </ul>
+        <script src="menu.js"></script>
+      </nav>
+    </div>
     <div class="date"></div>
-    <nav>
-      <button class="hamburger" aria-label="Toggle menu">
-        <span class="hamburger-icon"></span>
-      </button>
-      <ul class="menu">
-        <li><a href="#">Page Link 1</a></li>
-        <li><a href="#">Page Link 2</a></li>
-        <li><a href="#">Page Link 3</a></li>
-        <li><a href="#">Page Link 4</a></li>
-        <li><a href="#">Social Link 1</a></li>
-        <li><a href="#">Social Link 2</a></li>
-      </ul>
-      <script src="menu.js"></script>
-    </nav>
+    
     <div class="date"></div>
     <script src="date.js"></script>
   </header>
+  <div class="sidebar sidebar-left">
+    <!-- stuff added here soon -->
+  </div>
+  <div class="sidebar sidebar-right">
+    <!-- also stuff here eventually -->
+  </div>
   <main>
     <section class="hero">
       <h2>Hero Section</h2>
-      <p>Placeholder text</p>
+      <p> 
+        Here we will talk about the Hero of the Week! <br>
+        Stay tuned for more information!
+      </p>
     </section>
     <section class="news">
       <h2>News Section</h2>
-      <p>Placeholder text</p>
+      <p>
+        Upcoming news about the community and its businesses <br>
+        will be placed here. Check back often!
+      </p>
     </section>
     <section class="event">
       <h2>Event Section</h2>
-      <p>Placeholder text</p>
+      <p>
+        News about events and other gatherings will be here. <br> 
+        We hope to see you there!
+      </p>
     </section>
     <section class="weather">
       <h2>Weather Section</h2>
-      <p>Placeholder text</p>
+      <p>
+        Forcasts coming soon
+      </p>
     </section>
     <section class="join">
       <h2>Join Section</h2>
-      <p>Placeholder text</p>
+      <p>
+        Join the Chamber of Commerce and learn how it can benefit you and <br>
+        your business!
+      </p>
     </section>
-    <section class="spotlight">
-      <h2>Spotlight Section</h2>
-      <p>Placeholder text</p>
+    <section class="spotlight1">
+      <h2>Spotlight Section A</h2>
+      <p>
+        Here we will spotlight two businesses a week. <br>
+        Check back soon to learn how to apply for this spot...
+      </p>
     </section>
-    <section class="spotlight">
-      <h2>Spotlight Section</h2>
-      <p>Placeholder text</p>
+    <section class="spotlight2">
+      <h2>Spotlight Section B</h2>
+      <p>
+        Or this spot!
+      </p>
     </section>
   </main>
   <footer>
@@ -80,5 +106,8 @@
     </div>
     <script src="footer.js"></script>
   </footer>
+  <script src="./scripts/script.js"></script>
+  <script src="./scripts/date.js"></script>
+  <script src="./scripts/modified.js"></script>
 </body>
 </html>
