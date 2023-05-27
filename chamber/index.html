@@ -16,7 +16,7 @@
 <body>
   <header>
     <div class="header-content">
-      <div class="logo"><img class='img' src="./images/logo.png"></div>
+      <div class="logo"><img class='img' src="./images/logo.webp"></div>
       <h1 class="site-name">Oak Harbor Chamber of Commerce</h1>
       <div id="banner" class="banner"></div>
       <nav>
@@ -45,6 +45,12 @@
   <main>
     <section class="hero">
       <h2>Hero Section</h2>
+      <picture>
+        <source media="(min-width: 1200px)" srcset="./images/stockphoto.jpg">
+        <source media="(min-width: 768px)" srcset="./images/stockphoto.jpg">
+        <source srcset="./images/stockphoto.jpg">
+        <img src="./images/stockphoto.jpg" alt="photo of people at a table discussing things">
+      </picture>
       <p> 
         Here we will talk about the Hero of the Week! <br>
         Stay tuned for more information!
@@ -67,7 +73,9 @@
     <section class="weather">
       <h2>Weather Section</h2>
       <p>
-        Forcasts coming soon
+        Temperature: <span id="temperature"></span>°F<br>
+        Wind Speed: <span id="windSpeed"></span> mph<br>
+        Wind Chill Factor: <span id="windChill"></span>
       </p>
     </section>
     <section class="join">
@@ -92,13 +100,13 @@
     </section>
   </main>
   <footer>
-    <div class="logo">Logo</div>
+    <div class="logo"><img src="./images/logo.webp" style="width: 6%; height: auto;"></div>
     <address>
       Contact Information<br>
       123 Main St<br>
-      City, State Zip<br>
+      Oak Harbor,  Maine<br>
       Phone: 555-555-5555<br>
-      Email: info@example.com
+      Email: bro19016@byui.edu
     </address>
     <a href="#">Map</a>
     <div class="copyright">
@@ -109,5 +117,6 @@
   <script src="./scripts/script.js"></script>
   <script src="./scripts/date.js"></script>
   <script src="./scripts/modified.js"></script>
+  <script src="./scripts/windchill.js"></script>
 </body>
 </html>

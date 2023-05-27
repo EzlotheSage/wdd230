@@ -214,8 +214,11 @@
     /* section for the inner media content */
 
     .hero {
-      grid-row: 1;
-      grid-column: 2;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      grid-row: 1/2;
+      grid-column: 1/2;
     }
 
     .news {
@@ -224,6 +227,9 @@
     }
 
     .weather {
+      background-color: #58421b;
+      color: white;
+      place-items: center;
       grid-row: 3;
       grid-column: 2;
     }
