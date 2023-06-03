@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Discover Oak Harbor</title>
+  <link rel="shortcut icon" href="../favicon.ico">
+  <link rel="stylesheet" href="./styles/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ysabeau:wght@200&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+        <div class="logo">
+            <a href="./index.html">
+                <img class='img' src="./images/logo.webp">
+            </a>
+        </div>
+        <h1 class="site-name">Oak Harbor Chamber of Commerce</h1>
+        <div id="banner" class="banner"></div>
+        <nav>
+            <ul class="menu">
+            <li><a href="#">Join</a></li>
+            <li><a href="./discover.html">Discover</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Find us on Facebook!</a></li>
+            <li><a href="#">Check us out on Instagram!</a></li>
+            </ul>
+            <script src="menu.js"></script>
+        </nav>
+        </div>
+        <div class="date"></div>
+        <script src="date.js"></script>
+  </header>
+</body>
+<main id="discover-main">
+    <div id="pic1">
+        <picture>
+            <source media="(min-width: 1200px)" srcset="https://picsum.photos/id/17/200/300.webp">
+            <source media="(min-width: 768px)" srcset="https://picsum.photos/id/17/200/300.webp">
+            <source srcset="/chamber/images/discover1.jpg">
+            <img src="/chamber/images/discover1.jpg" class="placeholder" alt="Placeholder">
+        </picture>
+        <p>
+            Check out our hiking trails across the Great Oak Forest!
+        </p>
+    </div>
+    <div id="pic2">
+        <picture>
+            <source media="(min-width: 1200px)" srcset="https://picsum.photos/id/42/200/300.webp">
+            <source media="(min-width: 768px)" srcset="https://picsum.photos/id/42/200/300.webp">
+            <source srcset="placeholder.jpg">
+            <img src="placeholder.jpg" class="placeholder" alt="Placeholder">
+        </picture>
+        <p>
+            There's always a cafe or coffee shop nearby when you're downtown!
+        </p>
+    </div>
+    <div id="pic3">
+        <picture>
+            <source media="(min-width: 1200px)" srcset="https://picsum.photos/id/58/200/300.webp">
+            <source media="(min-width: 768px)" srcset="https://picsum.photos/id/58/200/300.webp">
+            <source srcset="placeholder.jpg">
+            <img src="placeholder.jpg" class="placeholder" alt="Placeholder">
+        </picture>
+        <p>
+            Our famous Keeper's Lighthouse is a great place to check out if you're into history!
+        </p>
+    </div>
+    <div id="pic4">
+        <picture id="pic4">
+            <source media="(min-width: 1200px)" srcset="https://picsum.photos/id/120/200/300.webp">
+            <source media="(min-width: 768px)" srcset="https://picsum.photos/id/120/200/300.webp">
+            <source srcset="placeholder.jpg">
+            <img src="placeholder.jpg" class="placeholder" alt="Placeholder">
+        </picture>
+        <p>
+            When you're on the edges of town, you can really see the stars light up.
+        </p>
+    </div>
+    <div id="pic5">
+        <picture id="pic5">
+            <source media="(min-width: 1200px)" srcset="https://picsum.photos/id/211/200/300.webp">
+            <source media="(min-width: 768px)" srcset="https://picsum.photos/id/211/200/300.webp">
+            <source srcset="placeholder.jpg">
+            <img src="placeholder.jpg" class="placeholder" alt="Placeholder">
+        </picture>
+        <p>
+            Come see the historic ships in our harbour!
+        </p>
+    </div>
+    <div >
+        <h2 id="city-info">
+            This city is full of wonderful things. At just under 9,500 population (as of <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&pp=ygULcmljayBhc3RsZXk%3D">2020</a>
+            ) we're a wonderfully small town, and have plenty of that small town charm. There's lots to love here, 
+            and the more you stay, the more you'll find. 
+        </h2>
+    </div>
+</main>
+<footer>
+    <div class="logo">
+        <a href="index.html">
+            <img src="./images/logo.webp" style="width: 6%; height: auto;">
+        </a>
+    </div>
+    <address>
+      Contact Information<br>
+      123 Main St<br>
+      Oak Harbor,  Maine<br>
+      Phone: 555-555-5555<br>
+      Email: bro19016@byui.edu
+    </address>
+    <span id="daysSinceLastVisit"></span>
+    <a href="#">Map</a>
+    <div class="copyright">
+      &copy; <span class="year"></span> Site Name | Your Name | WDD 230 Project | Last modified: <span class="last-modified"></span>
+    </div>
+    <script src="/chamber/scripts/discoverscript.js"></script>
+</footer>
+</html>
