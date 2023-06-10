@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Oak Harbor Chamber Join Page</title>
+  <link rel="shortcut icon" href="../favicon.ico">
+  <link rel="stylesheet" href="./styles/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ysabeau:wght@200&display=swap" rel="stylesheet">
+  
+  
+
+</head>
+<body>
+    <header>
+    <div class="header-content">
+      <div class="logo"> 
+        <a href="./index.html">
+          <img class='img' src="./images/logo.webp">
+        </a>
+      </div>
+      <h1 class="site-name">Oak Harbor Chamber of Commerce</h1>
+      <div id="banner" class="banner"></div>
+      <nav>
+        <ul class="menu">
+          <li><a href="join.html">Join</a></li>
+          <li><a href="./discover.html">Discover</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Find us on Facebook!</a></li>
+          <li><a href="#">Check us out on Instagram!</a></li>
+        </ul>
+        <script src="menu.js"></script>
+      </nav>
+    </div>
+    <div class="date"></div>
+    
+    <div class="date"></div>
+    <script src="date.js"></script>
+  </header>
+<main>
+  <div id="form">
+    <h1>Membership Form</h1>
+    
+    <form action="thankyou.html" method="get">
+      <label for="first-name">First Name:</label>
+      <input type="text" id="first-name" name="first-name" required><br><br>
+      
+      <label for="last-name">Last Name:</label>
+      <input type="text" id="last-name" name="last-name" required><br><br>
+      
+      <label for="position-title">Business Position Title:</label>
+      <input type="text" id="position-title" name="position-title" pattern="[A-Za-z\s\-]{7,}" placeholder="7 character min"><br><br>
+      
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required placeholder="johnsmith@emailservice.com"><br><br>
+      
+      <label for="cell-phone">Cell Phone:</label>
+      <input type="tel" id="cell-phone" name="cell-phone" required><br><br>
+      
+      <label for="business-name">Business Name/Title:</label>
+      <input type="text" id="business-name" name="business-name" required><br><br>
+      
+      <label for="membership-level">Membership Level:</label>
+      <select id="membership-level" name="membership-level">
+        <option value="np-membership">NP Membership (Free)</option>
+        <option value="bronze-membership">Bronze Membership ($15/mo)</option>
+        <option value="silver-membership">Silver Membership ($50/mo)</option>
+        <option value="gold-membership">Gold Membership ($100/mo)</option>
+      </select><br><br>
+      
+      <label for="business-description">Business Description:</label><br>
+      <textarea id="business-description" name="business-description" rows="4" cols="50"></textarea><br><br>
+      
+      <input type="hidden" name="form-loaded-time" value="<?php echo date('Y-m-d H:i:s'); ?>">
+      
+      <input type="submit" value="Submit">
+    </form>
+    </div>
+    <div id="membership">
+      <h2>Membership Benefits:</h2>
+      <table>
+        <tr>
+          <th>&nbsp;</th>
+          <th>Subscription to Monthly Newsletter</th>
+          <th>Networking Event Pass</th>
+          <th>Premium Placement for the OHCC Expo Event</th>
+          <th>Free Advertising on the OHCC Page</th>
+        </tr>
+        <tr>
+          <th>Non-Profit Organization</th>
+          <td><span style="color: green">&#10004;</span></td>
+          <td><span style="color: green">&#10004;</span></td>
+          <td><span style="color: green">&#10004;</span></td>
+          <td><span style="color: green">&#10004;</span></td>
+        </tr>
+        <tr>
+          <th>Bronze Membership</th>
+          <td><span style="color: green">&#10004;</span></td>
+          <td><span style="color: red">&#10060;</span></td>
+          <td><span style="color: red">&#10060;</span></td>
+          <td><span style="color: green">&#10004;</span></td>
+        </tr>
+        <tr>
+          <th>Silver Membership</th>
+          <td><span style="color: green">&#10004;</span></td>
+          <td><span style="color: green">&#10004;</span></td>
+          <td><span style="color: red">&#10060;</span></td>
+          <td><span style="color: green">&#10004;</span></td>
+        </tr>
+        <tr>
+          <th>Gold Membership</th>
+          <td><span style="color: green">&#10004;</span></td>
+          <td><span style="color: green">&#10004;</span></td>
+          <td><span style="color: green">&#10004;</span></td>
+          <td><span style="color: green">&#10004;</span></td>
+        </tr>
+      </table>
+    </div>
+    </div>
+</main>
+</body>
+<footer>
+    <div class="logo"><img src="./images/logo.webp" style="width: 6%; height: auto;"></div>
+    <address>
+      Contact Information<br>
+      123 Main St<br>
+      Oak Harbor,  Maine<br>
+      Phone: 555-555-5555<br>
+      Email: bro19016@byui.edu
+    </address>
+    <a href="#">Map</a>
+    <div class="copyright">
+      &copy; <span class="year"></span> Site Name | Your Name | WDD 230 Project | Last modified: <span class="last-modified"></span>
+    </div>
+    <script src="footer.js"></script>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
