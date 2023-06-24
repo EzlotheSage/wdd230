@@ -1,5 +1,5 @@
 // Fetch the JSON data from data.json
-fetch('data.json')
+fetch('scripts/data.json')
   .then(response => response.json())
   .then(data => {
     // Get the container element to append the company cards
