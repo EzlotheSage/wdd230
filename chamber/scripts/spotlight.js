@@ -34,7 +34,7 @@ fetch('scripts/data.json')
             Phone: ${randomCompany2.phone}<br>
             Website: <a href="${randomCompany2.website}">${randomCompany2.website}</a><br>
             Membership Level: ${randomCompany2.membership_level}<br>
-            <img src="${randomCompany2.image}" alt="${randomCompany2.name} Image">
+            <img src="./images/${randomCompany2.image}" alt="${randomCompany2.name} Image">
         `;
     })
     .catch(error => {
