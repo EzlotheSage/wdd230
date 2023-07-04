@@ -28,7 +28,7 @@ const apiKey = 'b71b7c35ebce194fa2b43f67893af941';
       //console.log(windChillElement);
 
       const weatherIconCode = data.weather[0].icon;
-      const weatherIconUrl = 'http://openweathermap.org/img/wn/${weatherIconCode}.png';
+      const weatherIconUrl = `https://openweathermap.org/img/wn/${weatherIconCode}@2x.png`;
       weatherIconElement.src = weatherIconUrl;
       weatherIconElement.alt = data.weather[0].description;
     })

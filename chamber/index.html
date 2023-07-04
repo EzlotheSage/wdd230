@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
   <title>Oak Harbor Chamber Homepage</title>
   <link rel="shortcut icon" href="../favicon.ico">
   <link rel="stylesheet" href="./styles/styles.css">
@@ -37,7 +38,15 @@
     <script src="scripts/date.js"></script>
   </header>
   <div class="sidebar sidebar-left">
-    <!-- stuff added here soon -->
+    <section class="weather">
+      <h2>Current Weather</h2>
+      <p>
+        Temperature: <span id="temperature"></span>°F<br>
+        Wind Speed: <span id="windSpeed"></span> mph<br>
+        Wind Chill Factor: <span id="windChill"></span>
+        <img id="weatherIcon" alt="Weather Icon">
+      </p>
+    </section>
   </div>
   <div class="sidebar sidebar-right">
     <!-- also stuff here eventually -->
@@ -70,17 +79,9 @@
         We hope to see you there!
       </p>
     </section>
-    <section class="weather">
-      <h2>Weather Section</h2>
-      <p>
-        Temperature: <span id="temperature"></span>°F<br>
-        Wind Speed: <span id="windSpeed"></span> mph<br>
-        Wind Chill Factor: <span id="windChill"></span>
-        <img id="weatherIcon" alt="Weather Icon">
-      </p>
-    </section>
+    
     <section class="join">
-      <h2>Join Section</h2>
+      <h2><a href="join.html">Join Us!</a></h2>
       <p>
         Join the Chamber of Commerce and learn how it can benefit you and <br>
         your business!
@@ -101,7 +102,7 @@
     </section>
   </main>
   <footer>
-    <div class="logo"><img src="./images/logo.webp" style="width: 6%; height: auto;"></div>
+    
     <address>
       Contact Information<br>
       123 Main St<br>

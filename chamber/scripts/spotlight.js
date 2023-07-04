@@ -1,5 +1,5 @@
 // Fetch the JSON data
-fetch('data.json')
+fetch('scripts/data.json')
     .then(response => response.json())
     .then(data => {
         // Get the array of companies from the JSON data
