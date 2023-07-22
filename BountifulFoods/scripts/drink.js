@@ -88,9 +88,17 @@ document.getElementById('fruit-order-form').addEventListener('submit', function 
   formSubmissionCount++;
   updateFormSubmissionCount(formSubmissionCount);
 
-  // Update the form submission count on the page
-  document.getElementById('form-submission-count').textContent = formSubmissionCount;
+  // Display the formatted output in the modal
+  const modal = document.getElementById('modal');
+  const modalContent = modal.querySelector('.modal-content');
+  modalContent.innerHTML = formattedOutput;
+  modal.style.display = 'block';
 
-  // Display the formatted output in the 'output' div
-  document.getElementById('output').innerHTML = formattedOutput;
+  // Reset the form after submission
+  document.getElementById('fruit-order-form').reset();
+});
+
+// Close the modal when the close button is clicked
+document.getElementById('modal-close').addEventListener('click', function () {
+  document.getElementById('modal').style.display = 'none';
 });

@@ -27,33 +27,38 @@
 </header>
 <main>
    <div class="order-form">
-    <h2>Create Your Own Drink!</h2>
-    <form id="fruit-order-form"></form>
-        <label for="first-name">First Name:</label>
-        <input type="text" id="first-name" name="first-name" required>
+        <h2>Create Your Own Drink!</h2>
+        <form id="fruit-order-form"></form>
+            <label for="first-name">First Name:</label>
+            <input type="text" id="first-name" name="first-name" required>
 
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
 
-        <label for="phone">Phone Number:</label>
-        <input type="tel" id="phone" name="phone" required>
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
 
-        <label for="fruit-1">Select Fruit 1:</label>
-        <select id="fruit-1" name="fruit-1" ></select>
+            <label for="fruit-1">Select Fruit 1:</label>
+            <select id="fruit-1" name="fruit-1" ></select>
 
-        <label for="fruit-2">Select Fruit 2:</label>
-        <select id="fruit-2" name="fruit-2" ></select>
+            <label for="fruit-2">Select Fruit 2:</label>
+            <select id="fruit-2" name="fruit-2" ></select>
 
-        <label for="fruit-3">Select Fruit 3:</label>
-        <select id="fruit-3" name="fruit-3" ></select>
+            <label for="fruit-3">Select Fruit 3:</label>
+            <select id="fruit-3" name="fruit-3" ></select>
 
-        <label for="special-instructions">Special Instructions:</label>
-        <textarea id="special-instructions" name="special-instructions" rows="4" cols="50"></textarea>
+            <label for="special-instructions">Special Instructions:</label>
+            <textarea id="special-instructions" name="special-instructions" rows="4" cols="50"></textarea>
 
-        <button type="submit">Place Order</button>
-   </form>
+            <button type="submit">Place Order</button>
+        </form>
    </div>
-   <div id="output"></div>
+   <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="close" id="modal-close">&times;</span>
+      <!-- Content will be added dynamically by JavaScript -->
+    </div>
+  </div>
 </main>
 <footer>
     <p>
