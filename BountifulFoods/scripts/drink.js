@@ -40,7 +40,7 @@ function populateSelectOptions() {
     });
   }
 
-  document.getElementById('place-order-btn').addEventListener('click', function () {
+  document.getElementById('place-order-button').addEventListener('click', function () {
     // Gather input values
     const firstName = document.getElementById('first-name').value;
     const email = document.getElementById('email').value;
