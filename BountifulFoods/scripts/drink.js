@@ -1,17 +1,34 @@
 let nutritionData;
+let formSubmissionCount = 0; // Initialize the form submission count
 
 // Fetch the JSON data with available fruits from fruits.json
-
 fetch('scripts/fruits.json')
-.then(response => response.json())
-.then(data => {
+  .then(response => response.json())
+  .then(data => {
+    nutritionData = data; // Set the fetched data to the global variable
+    populateSelectOptions(); // Call a function to populate select options after fetching data
+  })
+  .catch(error => console.error('Error fetching data:', error));
+
+// Function to get the current form submission count from local storage
+function getFormSubmissionCount() {
+  const count = localStorage.getItem('formSubmissionCount');
+  return count ? parseInt(count) : 0;
+}
+
+// Function to update and store the form submission count in local storage
+function updateFormSubmissionCount(count) {
+  localStorage.setItem('formSubmissionCount', count);
+}
+
+function populateSelectOptions() {
   // Get the select elements by ID
   const fruitSelect1 = document.getElementById('fruit-1');
   const fruitSelect2 = document.getElementById('fruit-2');
   const fruitSelect3 = document.getElementById('fruit-3');
 
   // Populate each select element with the available fruits
-  data.forEach(fruit => {
+  nutritionData.forEach(fruit => {
     const option = document.createElement('option');
     option.value = fruit;
     option.textContent = fruit;
@@ -19,8 +36,7 @@ fetch('scripts/fruits.json')
     fruitSelect2.appendChild(option.cloneNode(true));
     fruitSelect3.appendChild(option.cloneNode(true));
   });
-})
-.catch(error => console.error('Error fetching data:', error));// script.js
+}
 
 document.getElementById('fruit-order-form').addEventListener('submit', function (event) {
   event.preventDefault(); // Prevent the form from submitting normally
@@ -36,14 +52,6 @@ document.getElementById('fruit-order-form').addEventListener('submit', function 
 
   // Get the order date
   const orderDate = new Date().toLocaleDateString();
-
-  // Example nutrition data source with information per fruit
-  const nutritionData = {
-    'Apple': { carbohydrates: 25, protein: 1, fat: 0, sugar: 19, calories: 95 },
-    'Banana': { carbohydrates: 27, protein: 1, fat: 0, sugar: 14, calories: 105 },
-    'Orange': { carbohydrates: 12, protein: 1, fat: 0, sugar: 9, calories: 62 },
-    // Add more fruits and their nutrition data here...
-  };
 
   // Calculate the total nutrition based on selected fruits
   const selectedFruits = [fruit1, fruit2, fruit3];
@@ -75,6 +83,13 @@ document.getElementById('fruit-order-form').addEventListener('submit', function 
     <p><strong>Total Sugar:</strong> ${totalNutrition.sugar}g</p>
     <p><strong>Total Calories:</strong> ${totalNutrition.calories} calories</p>
   `;
+
+  // Increment the form submission count and update it in local storage
+  formSubmissionCount++;
+  updateFormSubmissionCount(formSubmissionCount);
+
+  // Update the form submission count on the page
+  document.getElementById('form-submission-count').textContent = formSubmissionCount;
 
   // Display the formatted output in the 'output' div
   document.getElementById('output').innerHTML = formattedOutput;
