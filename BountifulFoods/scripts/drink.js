@@ -84,21 +84,19 @@ document.getElementById('fruit-order-form').addEventListener('submit', function 
     <p><strong>Total Calories:</strong> ${totalNutrition.calories} calories</p>
   `;
 
-  // Increment the form submission count and update it in local storage
   formSubmissionCount++;
   updateFormSubmissionCount(formSubmissionCount);
 
-  // Display the formatted output in the modal
-  const modal = document.getElementById('modal');
-  const modalContent = modal.querySelector('.modal-content');
-  modalContent.innerHTML = formattedOutput;
-  modal.style.display = 'block';
+  // Update the form submission count on the page
+  document.getElementById('form-submission-count').textContent = formSubmissionCount;
+
+  // Display the formatted output in the 'output' div
+  document.getElementById('output').innerHTML = formattedOutput;
+
+  // Open a new window with the nutrition information
+  const nutritionWindow = window.open('', '_blank');
+  nutritionWindow.document.write(formattedOutput);
 
   // Reset the form after submission
   document.getElementById('fruit-order-form').reset();
-});
-
-// Close the modal when the close button is clicked
-document.getElementById('modal-close').addEventListener('click', function () {
-  document.getElementById('modal').style.display = 'none';
 });
