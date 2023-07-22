@@ -113,8 +113,14 @@ function populateSelectOptions() {
   });
   
   // Close the modal when the close button is clicked
-  document.getElementById('modal-close').addEventListener('click', function () {
-    document.getElementById('modal').style.display = 'none';
-  });
+  span.onclick(function) {
+    modal.style.display = "none";
+  }
+
+  window.onclick = function(event) {
+    if event.target == modal {
+        modal.style.display = "none";
+    }
+  }
 
 });
