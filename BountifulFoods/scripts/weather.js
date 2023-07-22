@@ -1,8 +1,8 @@
 document.addEventListener('DOMContentLoaded', function () {
-    const apiKey = 'bc7fb27d86655ce7753ba6f95336c886';
+    const apiKey = 'YOUR_OPENWEATHER_API_KEY';
     const city = 'Carlsbad';
-    const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${apiKey}`;
-    const forecastUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&units=metric&appid=${apiKey}`;
+    const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=imperial&appid=${apiKey}`;
+    const forecastUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&units=imperial&appid=${apiKey}`;
 
     function fetchData(url) {
         return fetch(url)
@@ -20,13 +20,20 @@ document.addEventListener('DOMContentLoaded', function () {
         humidityElement.textContent = data.main.humidity;
     }
 
+    function formatForecastDate(timestamp) {
+        const date = new Date(timestamp * 1000);
+        const month = date.getMonth() + 1;
+        const day = date.getDate();
+        return `${month}/${day}`;
+    }
+
     function displayForecast(data) {
         const forecastListElement = document.getElementById('forecast-list');
         forecastListElement.innerHTML = '';
 
         for (let i = 0; i < data.list.length; i += 8) {
             const forecast = data.list[i];
-            const date = new Date(forecast.dt * 1000).toLocaleDateString();
+            const date = formatForecastDate(forecast.dt);
             const temperature = forecast.main.temp;
             const description = forecast.weather[0].description;
 
