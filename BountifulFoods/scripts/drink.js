@@ -45,22 +45,19 @@ function populateSelectOptions() {
     const modalContent = modal.querySelector('.modal-content');
   
     // Create a close button element
-    const closeButton = document.createElement('span');
-    closeButton.classList.add('close');
+    const closeButton = document.getElementById('modal-close');
     closeButton.textContent = '×'; // Use '×' for a close symbol
-  
-    // Append the close button and formatted output to the modal content
-    modalContent.innerHTML = ''; // Clear any existing content
-    modalContent.appendChild(closeButton);
-    modalContent.insertAdjacentHTML('beforeend', formattedOutput);
-  
-    // Show the modal
-    modal.style.display = 'block';
   
     // Add an event listener to the close button to hide the modal when clicked
     closeButton.addEventListener('click', function () {
       modal.style.display = 'none';
     });
+  
+    // Append the formatted output to the modal content
+    modalContent.innerHTML = formattedOutput;
+  
+    // Show the modal
+    modal.style.display = 'block';
   }
   
   document.getElementById('place-order-button').addEventListener('click', function () {
