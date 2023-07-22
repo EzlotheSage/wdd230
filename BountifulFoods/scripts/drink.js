@@ -104,19 +104,20 @@ document.addEventListener('DOMContentLoaded', function () {
       selectedFruits.forEach(fruit => {
         const selectedFruitData = nutritionData.find(item => item.name === fruit);
         if (selectedFruitData) {
-            totalNutrition.carbohydrates += selectedFruitData.nutritions.carbohydrates;
-            totalNutrition.protein += selectedFruitData.nutritions.protein;
-            totalNutrition.fat += selectedFruitData.nutritions.fat;
-            totalNutrition.sugar += selectedFruitData.nutritions.sugar;
-            totalNutrition.calories += selectedFruitData.nutritions.calories;
+          totalNutrition.carbohydrates += selectedFruitData.nutritions.carbohydrates;
+          totalNutrition.protein += selectedFruitData.nutritions.protein;
+          totalNutrition.fat += selectedFruitData.nutritions.fat;
+          totalNutrition.sugar += selectedFruitData.nutritions.sugar;
+          totalNutrition.calories += selectedFruitData.nutritions.calories;
         }
-    });
-        // round things out
-        totalNutrition.carbohydrates = Math.round(totalNutrition.carbohydrates);
-        totalNutrition.protein = Math.round(totalNutrition.protein);
-        totalNutrition.fat = Math.round(totalNutrition.fat);
-        totalNutrition.sugar = Math.round(totalNutrition.sugar);
-        totalNutrition.calories = Math.round(totalNutrition.calories);
+      });
+  
+      // Round the nutrition values to the nearest whole number
+      totalNutrition.carbohydrates = Math.round(totalNutrition.carbohydrates);
+      totalNutrition.protein = Math.round(totalNutrition.protein);
+      totalNutrition.fat = Math.round(totalNutrition.fat);
+      totalNutrition.sugar = Math.round(totalNutrition.sugar);
+      totalNutrition.calories = Math.round(totalNutrition.calories);
 
       // Format the output
       const formattedOutput = `
