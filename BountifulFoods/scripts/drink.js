@@ -43,19 +43,10 @@ function populateSelectOptions() {
     // Display the formatted output in the modal
     const modal = document.getElementById('modal');
     const modalContent = modal.querySelector('.modal-content');
-  
-    // Create a close button element
-    const closeButton = document.getElementById('modal-close');
-    closeButton.textContent = '×'; // Use '×' for a close symbol
-  
-    // Add an event listener to the close button to hide the modal when clicked
-    closeButton.addEventListener('click', function () {
-      modal.style.display = 'none';
-    });
-  
+
     // Append the formatted output to the modal content
     modalContent.innerHTML = formattedOutput;
-  
+
     // Show the modal
     modal.style.display = 'block';
   }
@@ -107,7 +98,6 @@ function populateSelectOptions() {
     // Display the formatted output in the modal
     const modal = document.getElementById('modal');
     const modalContent = modal.querySelector('.modal-content');
-    displayModal(formattedOutput);
     modalContent.innerHTML = formattedOutput;
     modal.style.display = 'block';
   
