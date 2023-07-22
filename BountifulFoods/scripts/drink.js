@@ -111,7 +111,13 @@ document.addEventListener('DOMContentLoaded', function () {
             totalNutrition.calories += selectedFruitData.nutritions.calories;
         }
     });
-    
+        // round things out
+        totalNutrition.carbohydrates = Math.round(totalNutrition.carbohydrates);
+        totalNutrition.protein = Math.round(totalNutrition.protein);
+        totalNutrition.fat = Math.round(totalNutrition.fat);
+        totalNutrition.sugar = Math.round(totalNutrition.sugar);
+        totalNutrition.calories = Math.round(totalNutrition.calories);
+
       // Format the output
       const formattedOutput = `
         <h2>Order Summary</h2>
