@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content='The homepage of Bountiful Foods'>
+    <link rel="shortcut icon" href="images/bountifulfav.ico">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="shortcut icon" href="images/bountifulfav.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Ysabeau:wght@200&display=swap" rel="stylesheet">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <title>Bountiful Foods: Create a Drink!</title>
+</head>
+<body>
+<header>
+    <img class="logoimage" src="images/logo.jpg">
+    <div id="logotext">
+        Bountiful Foods
+    </div>
+    <div class="nav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="fresh.html">Fresh</a></li>
+            <li><a href="about.html">About Us</a></li>
+        </ul>
+    </div>
+</header>
+<main>
+   <div class="order-form">
+    <h2>Create Your Own Drink!</h2>
+    <form id="fruit-order-form"></form>
+        <label for="first-name">First Name:</label>
+        <input type="text" id="first-name" name="first-name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required>
+
+        <label for="fruit-1">Select Fruit 1:</label>
+        <select id="fruit-1" name="fruit-1" required></select>
+
+        <label for="fruit-2">Select Fruit 2:</label>
+        <select id="fruit-2" name="fruit-2" required></select>
+
+        <label for="fruit-3">Select Fruit 3:</label>
+        <select id="fruit-3" name="fruit-3" required></select>
+
+        <label for="special-instructions">Special Instructions:</label>
+        <textarea id="special-instructions" name="special-instructions" rows="4" cols="50"></textarea>
+
+        <button type="submit">Place Order</button>
+   </form>
+   </div>
+</main>
+<footer>
+    <p>
+        Bountiful Foods<br>
+        567 Garden St.<br>
+        Carlsbad, CA 92008<br>
+        Phone: (555)555-1234<br>
+        Email: info@bountifulfoods.com<br>
+    </p>
+</footer>
+    <script src="scripts/drink.js"></script>
+</body>
+</html>

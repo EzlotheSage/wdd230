@@ -1,0 +1,29 @@
+/* styles for all main, header, and footer content */
+
+body {
+    font-family: "ysabeau", sans-serif;
+    background-color: #D1CCDC;
+}
+
+header {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+p {
+    color: black;
+}
+
+/* Specific element styles */
+.logoimage {
+    width: 10%;
+    height: auto;
+    grid-row: 1;
+}
+
+#logotext {
+    grid-row: 2;
+}
