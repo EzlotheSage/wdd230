@@ -39,6 +39,29 @@ function populateSelectOptions() {
     });
   }
 
+  function displayModal(formattedOutput) {
+    // Display the formatted output in the modal
+    const modal = document.getElementById('modal');
+    const modalContent = modal.querySelector('.modal-content');
+
+    // Create a close button element
+    const closeButton = document.createElement('span');
+    closeButton.classList.add('close');
+    closeButton.textContent = '×'; // Use '×' for a close symbol
+
+    // Append the close button and formatted output to the modal content
+    modalContent.appendChild(closeButton);
+    modalContent.insertAdjacentHTML('beforeend', formattedOutput);
+
+    // Show the modal
+    modal.style.display = 'block';
+
+    // Add an event listener to the close button to hide the modal when clicked
+    closeButton.addEventListener('click', function () {
+      modal.style.display = 'none';
+    });
+  }
+
   document.getElementById('place-order-button').addEventListener('click', function () {
     // Gather input values
     const firstName = document.getElementById('first-name').value;
@@ -86,6 +109,7 @@ function populateSelectOptions() {
     // Display the formatted output in the modal
     const modal = document.getElementById('modal');
     const modalContent = modal.querySelector('.modal-content');
+    displayModal(formattedOutput);
     modalContent.innerHTML = formattedOutput;
     modal.style.display = 'block';
   
