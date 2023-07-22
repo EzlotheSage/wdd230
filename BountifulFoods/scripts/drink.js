@@ -1,3 +1,5 @@
+document.addEventListener('DOMContentLoaded', function() {
+
 let nutritionData;
 let formSubmissionCount = 0; // Initialize the form submission count
 
@@ -103,3 +105,5 @@ function populateSelectOptions() {
   document.getElementById('modal-close').addEventListener('click', function () {
     document.getElementById('modal').style.display = 'none';
   });
+
+});
