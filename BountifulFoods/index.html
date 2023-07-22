@@ -49,11 +49,19 @@
         <li><a href="https://www.twitter.com">Twitter</a></li>
     </ul>
    </div>
-   <div id="weather">
-    <p>
-        Weather info here
-    </p>
-   </div>
+   <div class="weather-card">
+    <h1>Carlsbad Weather</h1>
+    <div class="current-weather">
+        <h2>Current Weather</h2>
+        <p>Temperature: <span id="temperature"></span> &#8451;</p>
+        <p>Description: <span id="description"></span></p>
+        <p>Humidity: <span id="humidity"></span>%</p>
+    </div>
+    <div class="forecast">
+        <h2>3-Day Forecast</h2>
+        <ul id="forecast-list"></ul>
+    </div>
+    </div>
    <div id="output">
     Form has been submitted <span id="form-submission-count">0</span> times.
    </div>
@@ -68,5 +76,6 @@
     </p>
 </footer>
     <script src="scripts/drink.js"></script>
+    <script src="scripts/weather.js"></script>
 </body>
 </html>
