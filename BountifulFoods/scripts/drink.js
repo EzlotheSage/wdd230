@@ -1,16 +1,15 @@
-document.addEventListener('DOMContentLoaded', function() {
-
-let nutritionData;
-let formSubmissionCount = 0; // Initialize the form submission count
-
-// Fetch the JSON data with available fruits from fruits.json
-fetch('scripts/fruits.json')
-  .then(response => response.json())
-  .then(data => {
-    nutritionData = data; // Set the fetched data to the global variable
-    populateSelectOptions(); // Call a function to populate select options after fetching data
-  })
-  .catch(error => console.error('Error fetching data:', error));
+document.addEventListener('DOMContentLoaded', function () {
+    let nutritionData;
+    let formSubmissionCount = 0; // Initialize the form submission count
+  
+    // Fetch the JSON data with available fruits from fruits.json
+    fetch('scripts/fruits.json')
+      .then(response => response.json())
+      .then(data => {
+        nutritionData = data; // Set the fetched data to the global variable
+        populateSelectOptions(); // Call a function to populate select options after fetching data
+      })
+      .catch(error => console.error('Error fetching data:', error));
 
 // Function to get the current form submission count from local storage
 function getFormSubmissionCount() {
