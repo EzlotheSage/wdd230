@@ -50,10 +50,20 @@ document.addEventListener('DOMContentLoaded', function () {
       // Display the formatted output in the modal
       const modal = document.getElementById('modal');
       const modalContent = modal.querySelector('.modal-content');
-  
-      // Append the formatted output to the modal content
-      modalContent.innerHTML = formattedOutput;
-  
+    
+      // Create a close button element
+      const closeButton = document.createElement('span');
+      closeButton.classList.add('close');
+      closeButton.textContent = '×'; // Use '×' for a close symbol
+    
+      // Add an event listener to the close button to hide the modal when clicked
+      closeButton.addEventListener('click', hideModal);
+    
+      // Append the close button and formatted output to the modal content
+      modalContent.innerHTML = ''; // Clear any previous content
+      modalContent.appendChild(closeButton);
+      modalContent.insertAdjacentHTML('beforeend', formattedOutput);
+    
       // Show the modal
       modal.style.display = 'block';
     }
@@ -129,5 +139,6 @@ document.addEventListener('DOMContentLoaded', function () {
       // Reset the form after submission
       document.getElementById('fruit-order-form').reset();
     });
+  
   });
   
