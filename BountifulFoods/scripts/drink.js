@@ -2,7 +2,7 @@ let nutritionData;
 
 // Fetch the JSON data with available fruits from fruits.json
 
-fetch('fruits.json')
+fetch('scripts/fruits.json')
 .then(response => response.json())
 .then(data => {
   // Get the select elements by ID
