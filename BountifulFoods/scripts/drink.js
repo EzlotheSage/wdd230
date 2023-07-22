@@ -20,6 +20,7 @@ document.addEventListener('DOMContentLoaded', function () {
     // Function to update and store the form submission count in local storage
     function updateFormSubmissionCount(count) {
       localStorage.setItem('formSubmissionCount', count);
+      formSubmissionCount = count; // Update the formSubmissionCount var
     }
   
     function populateSelectOptions() {
