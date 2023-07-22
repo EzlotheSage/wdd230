@@ -100,16 +100,17 @@ document.addEventListener('DOMContentLoaded', function () {
       // Calculate the total nutrition based on selected fruits
       const selectedFruits = [fruit1, fruit2, fruit3];
       let totalNutrition = { carbohydrates: 0, protein: 0, fat: 0, sugar: 0, calories: 0 };
-    
+  
       selectedFruits.forEach(fruit => {
-        if (nutritionData.hasOwnProperty(fruit)) {
-          totalNutrition.carbohydrates += nutritionData[fruit].carbohydrates;
-          totalNutrition.protein += nutritionData[fruit].protein;
-          totalNutrition.fat += nutritionData[fruit].fat;
-          totalNutrition.sugar += nutritionData[fruit].sugar;
-          totalNutrition.calories += nutritionData[fruit].calories;
+        const selectedFruitData = nutritionData.find(item => item.name === fruit);
+        if (selectedFruitData) {
+            totalNutrition.carbohydrates += selectedFruitData.carbohydrates;
+            totalNutrition.protein += selectedFruitData.protein;
+            totalNutrition.fat += selectedFruitData.fat;
+            totalNutrition.sugar += selectedFruitData.sugar;
+            totalNutrition.calories += selectedFruitData.calories;
         }
-      });
+    });
     
       // Format the output
       const formattedOutput = `
