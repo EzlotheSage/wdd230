@@ -2,7 +2,7 @@ let nutritionData;
 let formSubmissionCount = 0; // Initialize the form submission count
 
 // Fetch the JSON data with available fruits from fruits.json
-fetch('scripts/fruits.json')
+fetch('fruits.json')
   .then(response => response.json())
   .then(data => {
     nutritionData = data; // Set the fetched data to the global variable
