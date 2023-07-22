@@ -3,55 +3,239 @@
 body {
     font-family: "ysabeau", sans-serif;
     background-color: #D1CCDC;
+    margin: 0;
 }
 
 header {
-    display: grid;
-    align-items: center;
     justify-items: center;
-    grid-template-columns: 1fr;
+    font-family: 'Lobster Two', cursive;
+    background-color: #efa817;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
     grid-template-rows: 1fr 1fr;
+    gap: 20px;
+    margin-top: -10px;
+    padding: 10px;
+    border: 5px solid #0c8318;
+    row-gap: 0px;
+}
+
+
+
+footer {
+    display: flex;
+    margin: 10px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: space-end;
+    font-family: 'ysabeau', cursive;
+    font-size: 19px;
 }
 
 p {
     color: black;
 }
 
+a {
+    text-decoration: none;
+}
+
 /* Specific element styles */
 .logoimage {
-    width: 10%;
+    width: 20%;
     height: auto;
-    grid-row: 1;
+    order: 0;
+    margin-top: 10px;
 }
 
 #logotext {
+    font-size: 60pt;
+    padding: 25px;
+    order: 0;
+}
+
+#aerial {
+    border: 2px solid black;
+    border-radius: 5%;
+}
+
+/* Placement for the main elements on index.html */
+
+#local-area {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+#call {
+    grid-column: 1;
     grid-row: 2;
+}
+
+#social-media {
+    grid-column: 1;
+    grid-row: 1; 
+}
+
+.weather-card {
+    grid-column: 3;
+    grid-row: 1/2;
+}
+
+#output {
+    grid-column: 1;
+    grid-row: 3;
+}
+
+/* Nav bar stuff */
+
+.nav {
+    display: flex;
+    background-color: #255f85;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-family: 'Passion One', cursive;
+    color: white;
+}
+
+.nav li {
+    list-style-type: none;
+    padding: 15px;
+}
+
+.nav a {
+    margin: 20px;
+    font-size: 50px;
+}
+
+.nav a:hover {
+    color: #dd0426;
+}
+
+.nav a:visited {
+    color: white;
+}
+
+/* Local Area Card */
+
+#local-area {
+    font-size: 25px;
+    justify-items: center;
+}
+
+/* Call card */
+
+#call {
+    display: flex;
+    color: black;
+    font-size: 20px;
+    justify-content: center;
+    text-align: center;
+    
+}
+
+#call a {
+    color: black;
+}
+
+#call a:visited {
+    color: black;
+}
+/* Social Media Card */
+
+#social-media {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 10px 1fr;
+    align-items: center;
+    padding-top: 30px;
+    padding-left: 20px;
+}
+
+#social-media h1 {
+    margin-left: 20px;
+}
+
+#social-media p {
+    grid-column: 1;
+    grid-row: 1;
+    text-align: center;
+}
+
+/* Social Media <ul> specifics */
+
+.social-media {
+    list-style: none;
+}
+
+.social-media li {
+    padding-left: 40px;
+    font-size: 30px;
+    line-height: 2;
+    background-repeat: no-repeat;
+    background-position: left center;
+    grid-row: 2;
+    text-align: left;
+}
+
+.social-media li a {
+    color: black;
+}
+
+.social-media li a:visited {
+    color: black;
+}
+
+.social-media li:nth-child(1) {
+    background-image: url('../images/facebook-icon.png');
+    background-size: 30px 30px;
+}
+
+.social-media li:nth-child(2) {
+    background-image: url('../images/instagram-icon.png');
+    background-size: 30px 30px;
+}
+
+.social-media li:nth-child(3) {
+    background-image: url('../images/twitter-icon.png');
+    background-size: 30px 30px;
+}
+
+/* Drink counter specifics */
+
+#output {
+    color: black;
+    text-justify: center;
+    padding-left: 30px;
+    font-size: 20px;
 }
 
 /* Style the modal */
 .modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
+    display: none; 
+    position: fixed; 
+    z-index: 1;
     left: 0;
     top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    width: 100%;
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
   }
   
   
   /* Modal content */
   .modal-content {
     background-color: #fefefe;
-    margin: 15% auto; /* 15% from the top and centered */
+    margin: 15% auto; 
     padding: 20px;
     border: 1px solid #888;
-    width: 80%; /* Could be more or less, depending on screen size */
+    width: 50%; 
   }
-  
+
   .close {
     color: #aaa;
     float: right;
@@ -66,3 +250,50 @@ p {
     cursor: pointer;
   }
   
+/* Order Form */
+
+.order-form {
+    grid-column: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+
+}
+            /* different columns for 'fresh' page */
+
+#fresh {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+button {
+    margin: 5px 5px 5px 0px;
+    width: 200px;
+    height: 60px;
+    background-color: #dd0426;
+    color: white;
+    font-size: 20px;
+    font-family: 'Lobster Two', cursive;
+}
+
+/* About us Page */
+
+#about {
+    display: grid;
+    grid-template-columns: 1fr 1fr 0.5fr;
+    grid-template-rows: 1fr;
+    font-size: 30px;
+}
+
+#about {
+    grid-column: 2;
+    grid-row: 1;
+    display: flex;
+}
+
+#contact {
+    grid-column: 3;
+    grid-row: 1;
+}

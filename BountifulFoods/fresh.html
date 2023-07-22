@@ -7,13 +7,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="shortcut icon" href="images/bountifulfav.ico">
-    <link href="https://fonts.googleapis.com/css2?family=Ysabeau:wght@200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital@1&family=Passion+One&family=Ysabeau:wght@200&display=swap" rel="stylesheet">
     <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
     <title>Bountiful Foods: Create a Drink!</title>
 </head>
 <body>
 <header>
-    <img class="logoimage" src="images/logo.jpg">
+    <img class="logoimage" src="images/logo.png">
     <div id="logotext">
         Bountiful Foods
     </div>
@@ -25,33 +25,40 @@
         </ul>
     </div>
 </header>
-<main>
+<main id="fresh">
    <div class="order-form">
     <h2>Create Your Own Drink!</h2>
     <form id="fruit-order-form"></form>
-        <label for="first-name">First Name:</label>
+        <label for="first-name"><strong>First Name:</strong></label>
         <input type="text" id="first-name" name="first-name" required>
 
-        <label for="email">Email:</label>
+        <label for="email"><strong>Email:</strong></label>
         <input type="email" id="email" name="email" required>
 
-        <label for="phone">Phone Number:</label>
+        <label for="phone"><strong>Phone Number:</strong></label>
         <input type="tel" id="phone" name="phone" required>
 
-        <label for="fruit-1">Select Fruit 1:</label>
+        <label for="fruit-1"><strong>Select Fruit 1:</strong></label>
         <select id="fruit-1" name="fruit-1" ></select>
 
-        <label for="fruit-2">Select Fruit 2:</label>
+        <label for="fruit-2"><strong>Select Fruit 2:</strong></label>
         <select id="fruit-2" name="fruit-2" ></select>
 
-        <label for="fruit-3">Select Fruit 3:</label>
+        <label for="fruit-3"><strong>Select Fruit 3:</strong></label>
         <select id="fruit-3" name="fruit-3" ></select>
 
-        <label for="special-instructions">Special Instructions:</label>
+        <label for="special-instructions"><strong>Special Instructions:</strong></label>
         <textarea id="special-instructions" name="special-instructions" rows="4" cols="50"></textarea>
 
         <button id="place-order-button" type="button">Place Order</button>
    </form>
+   </div>
+   <div id="instructions">
+    <p>
+        <h2>Use our simple form on the left to create your own drink!</h2> <br><br>
+        <h3>Just enter your information, 3 fruits to add to the drink, then any special instructions you need. <br><br>
+        Place the order with the button, and then see the information about your drink!</h3>
+    </p>
    </div>
    <div id="modal" class="modal">
     <div class="modal-content">

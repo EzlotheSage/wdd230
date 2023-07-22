@@ -7,12 +7,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="shortcut icon" href="images/bountifulfav.ico">
-    <link href="https://fonts.googleapis.com/css2?family=Ysabeau:wght@200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital@1&family=Passion+One&family=Ysabeau:wght@200&display=swap" rel="stylesheet">
     <title>Bountiful Foods Homepage</title>
 </head>
 <body>
 <header>
-    <img class="logoimage" src="images/logo.jpg">
+    <img class="logoimage" src="images/logo.png">
     <div id="logotext">
         Bountiful Foods
     </div>
@@ -26,9 +26,11 @@
 </header>
 <main>
    <div id="local-area">
+    <img src="images/carlsbad-aerial.jpg" id="aerial" alt="An aerial view of Carlsbad, CA">
     <p>
         Carlsbad, a coastal city in Southern California, captivates with its pristine beaches, 
-        alluring coastline, and vibrant atmosphere. The city boasts iconic attractions such as its famous 
+        alluring coastline, and vibrant atmosphere. <br>
+        The city boasts iconic attractions such as its famous 
         Carlsbad Village and picturesque Flower Fields. With a pleasant Mediterranean 
         climate and a myriad of outdoor activities, Carlsbad beckons visitors to experience the 
         perfect blend of relaxation and adventure in its beautiful coastal setting.
@@ -36,14 +38,16 @@
    </div>
    <div id="call">
     <p>
-        Create your own drink with our myriad of fruit choices! Click <a href="fresh.html">here</a>!
+        Create your own drink with our myriad of fruit choices! <br><br><br>
+        Click <a href="fresh.html#order-form">here!</a>
     </p>
+        <div id="output">
+        <h3>You have submitted <span id="form-submission-count">0</span> different drinks!</h3>
+       </div>
    </div>
    <div id="social-media">
-    <p>
-        Find us on Social Media!
-    </p>
-    <ul>
+    <h1>Find us on Social Media!</h1>
+    <ul class="social-media">
         <li><a href="https://www.facebook.com">Facebook</a></li>
         <li><a href="https://www.instagram.com">Instagram</a></li>
         <li><a href="https://www.twitter.com">Twitter</a></li>
@@ -53,18 +57,16 @@
     <h1>Carlsbad Weather</h1>
     <div class="current-weather">
         <h2>Current Weather</h2>
-        <p>Temperature: <span id="temperature"></span> &#8451;</p>
-        <p>Description: <span id="description"></span></p>
-        <p>Humidity: <span id="humidity"></span>%</p>
+        <p><strong>Temperature: </strong><span id="temperature"></span> &deg;F;</p>
+        <p><strong>Description: </strong><span id="description"></span></p>
+        <p><strong>Humidity: </strong><span id="humidity"></span>%</p>
     </div>
     <div class="forecast">
         <h2>3-Day Forecast</h2>
         <ul id="forecast-list"></ul>
     </div>
     </div>
-   <div id="output">
-    You have submitted <span id="form-submission-count">0</span> different drinks!
-   </div>
+   
 </main>
 <footer>
     <p>
