@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', function () {
             const description = forecast.weather[0].description;
 
             const listItem = document.createElement('li');
-            listItem.innerHTML = `<strong>${date}:</strong> ${description}, ${temperature} &#8451;`;
+            listItem.innerHTML = `<strong>${date}:</strong> ${description}, ${temperature} &deg;F`;
             forecastListElement.appendChild(listItem);
         }
     }
