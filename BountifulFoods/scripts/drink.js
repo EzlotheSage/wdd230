@@ -104,11 +104,11 @@ document.addEventListener('DOMContentLoaded', function () {
       selectedFruits.forEach(fruit => {
         const selectedFruitData = nutritionData.find(item => item.name === fruit);
         if (selectedFruitData) {
-            totalNutrition.carbohydrates += selectedFruitData.carbohydrates;
-            totalNutrition.protein += selectedFruitData.protein;
-            totalNutrition.fat += selectedFruitData.fat;
-            totalNutrition.sugar += selectedFruitData.sugar;
-            totalNutrition.calories += selectedFruitData.calories;
+            totalNutrition.carbohydrates += selectedFruitData.nutritions.carbohydrates;
+            totalNutrition.protein += selectedFruitData.nutritions.protein;
+            totalNutrition.fat += selectedFruitData.nutritions.fat;
+            totalNutrition.sugar += selectedFruitData.nutritions.sugar;
+            totalNutrition.calories += selectedFruitData.nutritions.calories;
         }
     });
     
