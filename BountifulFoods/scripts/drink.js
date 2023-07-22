@@ -22,21 +22,21 @@ function updateFormSubmissionCount(count) {
 }
 
 function populateSelectOptions() {
-  // Get the select elements by ID
-  const fruitSelect1 = document.getElementById('fruit-1');
-  const fruitSelect2 = document.getElementById('fruit-2');
-  const fruitSelect3 = document.getElementById('fruit-3');
-
-  // Populate each select element with the available fruits
-  nutritionData.forEach(fruit => {
-    const option = document.createElement('option');
-    option.value = fruit;
-    option.textContent = fruit;
-    fruitSelect1.appendChild(option.cloneNode(true));
-    fruitSelect2.appendChild(option.cloneNode(true));
-    fruitSelect3.appendChild(option.cloneNode(true));
-  });
-}
+    // Get the select elements by ID
+    const fruitSelect1 = document.getElementById('fruit-1');
+    const fruitSelect2 = document.getElementById('fruit-2');
+    const fruitSelect3 = document.getElementById('fruit-3');
+  
+    // Populate each select element with the available fruits
+    nutritionData.forEach(fruit => {
+      const option = document.createElement('option');
+      option.value = fruit.name; // Use the correct property name that represents the fruit's name
+      option.textContent = fruit.name; // Use the correct property name that represents the fruit's name
+      fruitSelect1.appendChild(option.cloneNode(true));
+      fruitSelect2.appendChild(option.cloneNode(true));
+      fruitSelect3.appendChild(option.cloneNode(true));
+    });
+  }
 
 document.getElementById('fruit-order-form').addEventListener('submit', function (event) {
   event.preventDefault(); // Prevent the form from submitting normally
