@@ -147,6 +147,9 @@ document.addEventListener('DOMContentLoaded', function () {
     
       // Reset the form after submission
       document.getElementById('fruit-order-form').reset();
+
+      // Store in local storage
+      localStorage.setItem('formSubmissionCount', formSubmissionCount);
     });
   
   });
