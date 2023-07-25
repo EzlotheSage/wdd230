@@ -369,31 +369,50 @@
     }
     
     /* media queries for adjusting margins */
-    @media screen and (max-width: 600px) {
-    main {
-        margin-top: 50px;
-        margin-bottom: 50px;
-    }
+    /* Your existing CSS styles remain the same as mentioned in the previous response */
 
-    .grid-container {
-      grid-template-columns: 1fr;
-    }
+/* Media query for small view screens (max-width: 600px) */
+@media screen and (max-width: 600px) {
+  main {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
 
-    .menu {
-      display: none;
-    }
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
 
-    .navbar-toggle {
-      display: block;
-      content: '\f0c9';
-      font-family: FontAwesome;
-      font-size: 24px;
-      font-weight: bold;
-      color: #000;
-    }
-    
-    .navbar-links.active {
-      display: block;
-    }
-    
-    }
+  /* Adjust the font size for better readability on small screens */
+  body {
+    font-size: 14px;
+  }
+
+  /* Hide the regular navigation links and show the "hamburger" icon */
+  .menu {
+    display: none;
+  }
+
+  .navbar-toggle {
+    display: block;
+    /* Add your hamburger icon (e.g., three horizontal lines) as a background image or content */
+    content: '\f0c9';
+    font-family: FontAwesome;
+    font-size: 24px;
+    font-weight: bold;
+    color: #000;
+  }
+
+  /* Show the navigation links in a vertical layout when the "hamburger" icon is clicked */
+  .navbar-links.active {
+    display: block;
+    text-align: center; /* Adjust this to your preferred alignment */
+  }
+
+  /* Adjust the font size for the navigation links in the "hamburger" menu */
+  .navbar-links a {
+    font-size: 16px;
+    padding: 10px; /* Adjust this for better spacing */
+  }
+}
