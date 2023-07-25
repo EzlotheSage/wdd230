@@ -1,7 +1,6 @@
-const navBarLinks = document.querySelector('menu');
-
 // Function to toggle the navigation menu
 function toggleMenu() {
+    const navbarLinks = document.querySelector('.menu');
     navbarLinks.classList.toggle('active');
   }
   
@@ -9,8 +8,9 @@ function toggleMenu() {
   function checkMediaQuery() {
     const mediaQuery = window.matchMedia('(max-width: 600px)');
     if (mediaQuery.matches) {
-      navbarLinks.classList.add('active');
+      toggleMenu();
     } else {
+      const navbarLinks = document.querySelector('.menu');
       navbarLinks.classList.remove('active');
     }
   }
