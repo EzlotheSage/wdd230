@@ -382,6 +382,18 @@
     margin-bottom: 20px;
   }
 
+  .hero,
+  .news,
+  .event,
+  .join,
+  .spotlight1,
+  .spotlight2,
+  .spotlight3,
+  .weather {
+    grid-row: auto;
+    grid-column: auto;
+  }
+
   /* Adjust the font size for better readability on small screens */
   body {
     font-size: 14px;
