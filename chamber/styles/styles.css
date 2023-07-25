@@ -309,6 +309,17 @@
       grid-column: 4;
     }
 
+    /* nav bar */
+
+    .menu li {
+      display: inline-block;
+      margin-right: 20px;
+    }
+
+    .navbar-toggle {
+      display: none;
+    }
+    
 
     /* section for join.html */
 
@@ -367,6 +378,22 @@
     .grid-container {
       grid-template-columns: 1fr;
     }
+
+    .menu {
+      display: none;
+    }
+
+    .navbar-toggle {
+      display: block;
+      content: '\f0c9';
+      font-family: FontAwesome;
+      font-size: 24px;
+      font-weight: bold;
+      color: #000;
+    }
     
+    .navbar-links.active {
+      display: block;
+    }
     
     }
