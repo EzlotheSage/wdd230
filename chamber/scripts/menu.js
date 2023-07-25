@@ -5,6 +5,11 @@ navbarToggle.addEventListener('click', function () {
 navbarLinks.classList.toggle('active');
 });
 
+function toggleMenu() {
+    const navbarLinks = document.querySelector('.menu ul');
+    navbarLinks.classList.toggle('active');
+  }
+
 // Function to check if the small view media query is active
 function checkMediaQuery() {
 const mediaQuery = window.matchMedia('(max-width: 600px)');
