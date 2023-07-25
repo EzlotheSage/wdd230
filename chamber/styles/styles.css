@@ -367,12 +367,6 @@
     tr:nth-child(odd) {
       background-color: rgb(194, 194, 194);
     }
-    
-    /* media queries for adjusting margins */
-    /* Your existing CSS styles remain the same as mentioned in the previous response */
-
-/* Media query for small view screens (max-width: 600px) */
-/* Your existing CSS styles remain the same as mentioned in the previous responses */
 
 /* Media query for small view screens (max-width: 600px) */
 @media screen and (max-width: 600px) {
@@ -381,43 +375,11 @@
     display: none;
   }
 
-  /* Adjust the grid layout for small screens to stack elements in a single column */
-  .hero,
-  .news,
-  .event,
-  .join,
-  .spotlight1,
-  .spotlight2,
-  .spotlight3,
-  .weather {
-    grid-row: auto;
-    grid-column: auto;
-    margin-left: -10px;
-  }
-
-  /* Move the banner element below the logo in small view */
-  .banner {
+  /* Force elements to be in a single column in small view */
+  main > div {
     display: block;
-    /* Adjust any necessary styles for the banner in small view */
-  }
-
-  /* Move the menu to the top of the screen in small view */
-  header {
-    display: grid;
-    grid-template-rows: auto auto;
-  }
-
-  nav {
-    grid-row: 1;
-  }
-
-  .logo {
-    grid-row: 2;
-  }
-
-  /* Adjust the grid layout for small screens to stack elements in a single column */
-  main {
-    grid-template-columns: 1fr;
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
 
   /* Adjust the font size for better readability on small screens */
@@ -430,13 +392,11 @@
     display: none;
   }
 
+  /* Show the "bars" icon for the toggle button */
   .navbar-toggle {
     display: block;
-    content: '\f0c9';
-    font-family: FontAwesome;
-    font-size: 24px;
-    font-weight: bold;
-    color: #000;
+    font-size: 24px; /* Adjust the font size as needed */
+    color: #000; /* Adjust the color of the icon as needed */
   }
 
   /* Show the navigation links in a vertical layout when the "hamburger" icon is clicked */
@@ -451,3 +411,4 @@
     padding: 10px; /* Adjust this for better spacing */
   }
 }
+
