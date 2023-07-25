@@ -376,7 +376,7 @@
   }
 
   /* Force elements to be in a single column in small view */
-  main > div {
+  main {
     display: block;
     margin-top: 20px;
     margin-bottom: 20px;
