@@ -392,6 +392,7 @@
   .weather {
     grid-row: auto;
     grid-column: auto;
+    margin-left: -10px;
   }
 
   /* Move the banner element below the logo in small view */
@@ -431,8 +432,6 @@
 
   .navbar-toggle {
     display: block;
-    /* Add your hamburger icon (e.g., three horizontal lines) as a background image or content */
-    /* Example using FontAwesome: */
     content: '\f0c9';
     font-family: FontAwesome;
     font-size: 24px;
