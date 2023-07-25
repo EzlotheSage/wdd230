@@ -5,7 +5,7 @@
         "address": "123 Oak Street, Oak Harbor, USA",
         "phone": "555-1111",
         "website": "www.swiftsolutions.com",
-        "image": "./images/swift.jpg",
+        "image": "/images/swift.jpg",
         "membership_level": "gold"
       },
       {
@@ -13,7 +13,7 @@
         "address": "456 Oak Avenue, Oak Harbor, USA",
         "phone": "555-2222",
         "website": "www.cascadetech.com",
-        "image": "./images/cascade.jpg",
+        "image": "/images/cascade.jpg",
         "membership_level": "silver"
       },
       {
@@ -21,7 +21,7 @@
         "address": "321 Oak Lane, Oak Harbor, USA",
         "phone": "555-3333",
         "website": "www.summitventures.com",
-        "image": "./images/summit.jpg",
+        "image": "/images/summit.jpg",
         "membership_level": "bronze"
       },
       {
@@ -29,7 +29,7 @@
         "address": "567 Oak Street, Oak Harbor, USA",
         "phone": "555-4444",
         "website": "www.aurorainnovations.com",
-        "image": "./images/aurora.jpg",
+        "image": "/images/aurora.jpg",
         "membership_level": "silver"
       },
       {
@@ -37,7 +37,7 @@
         "address": "789 Oak Avenue, Oak Harbor, USA",
         "phone": "555-5555",
         "website": "www.polariscorp.com",
-        "image": "./images/polaris.jpg",
+        "image": "/images/polaris.jpg",
         "membership_level": "gold"
       },
       {
@@ -45,7 +45,7 @@
         "address": "123 Oak Lane, Oak Harbor, USA",
         "phone": "555-6666",
         "website": "www.apexindustries.com",
-        "image": "./images/apex.jpg",
+        "image": "/images/apex.jpg",
         "membership_level": "bronze"
       },
       {
@@ -53,7 +53,7 @@
         "address": "456 Oak Street, Oak Harbor, USA",
         "phone": "555-7777",
         "website": "www.horizonsolutions.com",
-        "image": "./images/horizon.jpg",
+        "image": "/images/horizon.jpg",
         "membership_level": "non-profit"
       },
       {
@@ -61,7 +61,7 @@
         "address": "321 Oak Lane, Oak Harbor, USA",
         "phone": "555-8888",
         "website": "www.vantageenterprises.com",
-        "image": "./images/vantage.jpg",
+        "image": "/images/vantage.jpg",
         "membership_level": "non-profit"
       },
       {
@@ -69,7 +69,7 @@
         "address": "567 Oak Street, Oak Harbor, USA",
         "phone": "555-9999",
         "website": "www.zenithtech.com",
-        "image": "./images/zenith.jpg",
+        "image": "/images/zenith.jpg",
         "membership_level": "silver"
       }
     ]
