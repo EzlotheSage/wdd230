@@ -304,6 +304,11 @@
       grid-column: 4;
     }
 
+    .spotlight3 {
+      grid-row: 4;
+      grid-column: 4;
+    }
+
 
     /* section for join.html */
 
