@@ -415,6 +415,10 @@
     font-size: 16px;
     padding: 10px; /* Adjust this for better spacing */
   }
+
+  .sidebar {
+    display: none;
+  }
   
   .hero,
   .news,
