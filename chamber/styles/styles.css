@@ -415,4 +415,20 @@
     font-size: 16px;
     padding: 10px; /* Adjust this for better spacing */
   }
-}
+  
+  .hero,
+  .news,
+  .event,
+  .join,
+  .spotlight1,
+  .spotlight2,
+  .spotlight3 {
+    grid-row: auto;
+    grid-column: auto;
+  }
+
+  .weather {
+    grid-row: auto;
+    grid-column: auto;
+    margin-top: 20px;
+  }
