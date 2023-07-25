@@ -29,7 +29,7 @@ fetch('scripts/data.json')
             Phone: ${randomCompany1.phone}<br>
             Website: <a href="${randomCompany1.website}">${randomCompany1.website}</a><br>
             Membership Level: ${randomCompany1.membership_level}<br>
-            <img src="images/${randomCompany1.image}" alt="${randomCompany1.name} Image">
+            <img src="/images/${randomCompany1.image}" alt="${randomCompany1.name} Image">
         `;
 
         const spotlight2 = document.querySelector('.spotlight2');
@@ -39,7 +39,7 @@ fetch('scripts/data.json')
             Phone: ${randomCompany2.phone}<br>
             Website: <a href="${randomCompany2.website}">${randomCompany2.website}</a><br>
             Membership Level: ${randomCompany2.membership_level}<br>
-            <img src="images/${randomCompany2.image}" alt="${randomCompany2.name} Image">
+            <img src="/images/${randomCompany2.image}" alt="${randomCompany2.name} Image">
         `;
 
         const spotlight3 = document.querySelector('.spotlight3');
@@ -49,7 +49,7 @@ fetch('scripts/data.json')
             Phone: ${randomCompany3.phone}<br>
             Website: <a href="${randomCompany3.website}">${randomCompany3.website}</a><br>
             Membership Level: ${randomCompany3.membership_level}<br>
-            <img src="images/${randomCompany3.image}" alt="${randomCompany3.name} Image">
+            <img src="/images/${randomCompany3.image}" alt="${randomCompany3.name} Image">
         `;
     })
     .catch(error => {
