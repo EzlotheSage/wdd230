@@ -358,10 +358,14 @@
     }
     
     /* media queries for adjusting margins */
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 600px) {
     main {
         margin-top: 50px;
         margin-bottom: 50px;
+    }
+
+    .grid-container {
+      grid-template-columns: 1fr;
     }
     
     
