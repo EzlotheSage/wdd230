@@ -21,10 +21,10 @@ menuButton.addEventListener("click", toggleMenuItems);
 function checkScreenWidth() {
   if (window.matchMedia("(max-width: 600px)").matches) {
     menuButton.style.display = "block";
-    menuItems.style.maxHeight = null; // Reset max-height when the screen size changes
+    menuItems.style.maxHeight = "none"; // Reset max-height when the screen size changes
   } else {
     menuButton.style.display = "none";
-    menuItems.style.maxHeight = "none"; // Show the menu items by default when the screen size is larger
+    menuItems.style.maxHeight = "block"; // Show the menu items by default when the screen size is larger
   }
 }
 
