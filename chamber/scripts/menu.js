@@ -3,6 +3,12 @@ const menuItems = document.getElementById("menu-items");
 // Function to toggle the visibility of the menu items
 function toggleMenuItems() {
   menuItems.classList.toggle("visible");
+  // Update the max-height value to fully display the menu items when they are visible
+  if (menuItems.classList.contains("visible")) {
+    menuItems.style.maxHeight = menuItems.scrollHeight + "px";
+  } else {
+    menuItems.style.maxHeight = null; // Reset max-height when the menu items are hidden
+  }
 }
 
 // Function to create the menu button and attach event listener
