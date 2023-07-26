@@ -84,22 +84,31 @@
     }
 
     nav {
+      display: flex;
+      flex-direction: row;
       background-color: #8f6b2c;
-      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-      grid-template-rows: 1fr 1fr ;
-      align-items: row;
-      text-align: left;
+      text-align: center;
+      justify-content: center;
       margin-top: 10px;
       margin-bottom: 00px;
       margin-right: 200px;
       margin-left: 200px;
       padding: 10px 0 10px 0;
-        }
+    }
       
     nav div {
       flex: 1 1 auto;
       flex-direction: row;
       height: auto;
+    }
+
+    nav ul {
+      list-style-type: none;
+      flex-direction: row;
+    }
+
+    nav li {
+      display: inline;
     }
     
     nav a {
