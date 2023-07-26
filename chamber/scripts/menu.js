@@ -1,3 +1,6 @@
+const menuItems = document.getElementById('menu-items')
+
+
 // Function to toggle the visibility of the menu items
 function toggleMenuItems() {
   menuItems.classList.toggle("visible");
