@@ -9,7 +9,7 @@ function toggleMenuItems() {
     menuItems.style.maxHeight = menuItems.scrollHeight + "px";
   } else {
     // Hide the menu items
-    menuItems.style.maxHeight = null; // Reset max-height to remove the transition effect
+    menuItems.style.maxHeight = 50; // Reset max-height to remove the transition effect
   }
   menuVisible = !menuVisible; // Toggle the menu visibility state
 }
