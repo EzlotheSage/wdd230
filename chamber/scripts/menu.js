@@ -7,7 +7,6 @@ function toggleMenuItems() {
   if (!menuVisible) {
     // Show the menu items
     menuItems.style.maxHeight = menuItems.scrollHeight + "px";
-    menuItems.style.display = block;
   } else {
     // Hide the menu items
     menuItems.style.maxHeight = null; // Reset max-height to remove the transition effect
