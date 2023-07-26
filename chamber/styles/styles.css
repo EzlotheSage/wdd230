@@ -324,10 +324,6 @@
       display: inline-block;
       margin-right: 20px;
     }
-
-    .navbar-toggle {
-      display: none;
-    }
     
 
     /* section for join.html */
@@ -411,6 +407,10 @@
   /* Hide the regular navigation links and show the "hamburger" icon */
   #menu-items {
     display: none;
+  }
+
+  #menu-items.visible {
+    display: block;
   }
   
 

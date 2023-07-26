@@ -16,10 +16,9 @@ function createMenuButton() {
   menuButton.addEventListener("click", toggleMenuItems);
 }
 
-// Function to check the screen width and show/hide the menu items
+// Function to check the screen width and show/hide the menu button
 function checkScreenWidth() {
   const menuButton = document.getElementById("menu-button");
-  const menuItems = document.getElementById("menu-items");
 
   if (window.matchMedia("(max-width: 600px)").matches) {
     menuButton.style.display = "block";
@@ -30,9 +29,11 @@ function checkScreenWidth() {
   }
 }
 
-// Initial check for screen width and create menu button if needed
+// Initial check for screen width
 checkScreenWidth();
-createMenuButton();
 
 // Add event listener for screen width changes
 window.addEventListener("resize", checkScreenWidth);
+
+// Create menu button if needed
+createMenuButton();
