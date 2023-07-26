@@ -413,6 +413,8 @@
 
   #menu-items.visible {
     display: block;
+    transition: max-height 0.3s ease; 
+    max-height: 200px;
   }
   
 
