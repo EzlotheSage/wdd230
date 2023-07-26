@@ -1,14 +1,16 @@
 const menuItems = document.getElementById("menu-items");
+let menuVisible = false; // Track the menu visibility state
 
 // Function to toggle the visibility of the menu items
 function toggleMenuItems() {
-  menuItems.classList.toggle("visible");
-  // Update the max-height value to fully display the menu items when they are visible
-  if (menuItems.classList.contains("visible")) {
+  if (!menuVisible) {
+    // Show the menu items
     menuItems.style.maxHeight = menuItems.scrollHeight + "px";
   } else {
-    menuItems.style.maxHeight = null; // Reset max-height when the menu items are hidden
+    // Hide the menu items
+    menuItems.style.maxHeight = null; // Reset max-height to remove the transition effect
   }
+  menuVisible = !menuVisible; // Toggle the menu visibility state
 }
 
 // Function to create the menu button and attach event listener
@@ -28,10 +30,10 @@ function checkScreenWidth() {
 
   if (window.matchMedia("(max-width: 600px)").matches) {
     menuButton.style.display = "block";
-    menuItems.classList.remove("visible"); // Hide menu items if button is shown
+    menuItems.style.maxHeight = null; // Reset max-height when the screen size changes
   } else {
     menuButton.style.display = "none";
-    menuItems.classList.add("visible"); // Show menu items if button is hidden
+    menuItems.style.maxHeight = "none"; // Show the menu items by default when screen size is larger
   }
 }
 
