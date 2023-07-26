@@ -6,10 +6,10 @@ let menuVisible = false; // Track the menu visibility state
 function toggleMenuItems() {
   if (!menuVisible) {
     // Show the menu items
-    menuItems.style.maxHeight = menuItems.scrollHeight + "px";
+    menuItems.style.display = "block";
   } else {
     // Hide the menu items
-    menuItems.style.maxHeight = null; // Reset max-height to remove the transition effect
+    menuItems.style.display = "none";
   }
   menuVisible = !menuVisible; // Toggle the menu visibility state
 }
@@ -21,10 +21,10 @@ menuButton.addEventListener("click", toggleMenuItems);
 function checkScreenWidth() {
   if (window.matchMedia("(max-width: 600px)").matches) {
     menuButton.style.display = "block";
-    menuItems.style.maxHeight = "none"; // Reset max-height when the screen size changes
+    menuItems.style.display = "none"; // Hide the menu items initially on smaller screens
   } else {
     menuButton.style.display = "none";
-    menuItems.style.maxHeight = "block"; // Show the menu items by default when the screen size is larger
+    menuItems.style.display = "flex"; // Show the menu items by default when screen size is larger
   }
 }
 
