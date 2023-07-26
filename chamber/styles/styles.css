@@ -400,27 +400,17 @@
   }
 
   /* Hide the regular navigation links and show the "hamburger" icon */
-  .menu {
+  #menu-items {
     display: none;
   }
+  
 
-  /* Show the "bars" icon for the toggle button */
-  .navbar-toggle {
-    display: block;
-    font-size: 24px; /* Adjust the font size as needed */
-    color: #000; /* Adjust the color of the icon as needed */
-  }
-
-  /* Show the navigation links in a vertical layout when the "hamburger" icon is clicked */
-  .navbar-links.active {
-    display: block;
-    text-align: center; /* Adjust this to your preferred alignment */
-  }
-
-  /* Adjust the font size for the navigation links in the "hamburger" menu */
-  .navbar-links a {
-    font-size: 16px;
-    padding: 10px; /* Adjust this for better spacing */
-  }
+/* Additional styles to improve appearance */
+  #menu-button {
+    border: none;
+    background-color: transparent;
+    font-size: 24px;
+    padding: 5px;
+    }
 }
 
