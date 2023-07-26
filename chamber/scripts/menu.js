@@ -3,6 +3,7 @@ let menuVisible = false; // Track the menu visibility state
 
 // Function to toggle the visibility of the menu items
 function toggleMenuItems() {
+  /* console.log('test') */
   if (!menuVisible) {
     // Show the menu items
     menuItems.style.maxHeight = menuItems.scrollHeight + "px";
