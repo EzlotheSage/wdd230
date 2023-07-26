@@ -416,6 +416,10 @@
 
 /* Additional styles to improve appearance */
   #menu-button {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 9999;
     border: none;
     background-color: transparent;
     font-size: 24px;

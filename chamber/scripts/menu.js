@@ -1,6 +1,3 @@
-const menuItems = document.getElementById('menu-items')
-
-
 // Function to toggle the visibility of the menu items
 function toggleMenuItems() {
   menuItems.classList.toggle("visible");
@@ -9,7 +6,7 @@ function toggleMenuItems() {
 // Function to create the menu button and attach event listener
 function createMenuButton() {
   const menuButton = document.createElement("button");
-  menuButton.textContent = "\u2630 Menu"; // Hamburger icon (Unicode character)
+  menuButton.textContent = "\u2630"; // Hamburger icon (Unicode character)
   menuButton.id = "menu-button";
   document.body.appendChild(menuButton);
 
@@ -17,7 +14,7 @@ function createMenuButton() {
   menuButton.addEventListener("click", toggleMenuItems);
 }
 
-// Function to check the screen width and show/hide the menu button
+// Function to check the screen width and show/hide the menu items
 function checkScreenWidth() {
   const menuButton = document.getElementById("menu-button");
   const menuItems = document.getElementById("menu-items");
